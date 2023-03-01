@@ -1,0 +1,187 @@
+/* Base Styling */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif ;
+    outline: 1px solid red;
+}
+
+
+img{
+    width: 100px;
+}
+
+header{
+    padding: 0 100px;
+    grid-column: 2 / span 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > div{
+    display: flex;
+}
+
+header img{
+    width: 50px
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: .5fr .5fr 4fr;
+}
+
+input{
+    background-color: rgb(243, 229, 229);
+    border-radius: 1rem;
+    padding: 5px;
+    width: 700px;
+}
+/* Sidebar Styling */
+.sidebarContainer{
+    background-color: rgb(46, 133, 190);
+    color: white;
+    grid-column: 1;
+    grid-row: 1 / 5;
+}
+.sidebar{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+
+}
+
+.sidebar h1{
+    margin-top: 36px;
+}
+
+.firstBlock{
+    margin-top: 5vh;
+    height: 300px;
+}
+
+.secondBlock{
+    margin-top: 5vh;
+    height: 100px;
+}
+
+
+.firstBlock,
+.secondBlock{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.firstBlock li,
+.secondBlock li{
+    list-style: none;
+    margin-top: 20px;
+}
+ 
+/* Main body Header Styling */
+.contentHeader{
+    grid-column: 2 / 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.contentHeader > div{
+    display: flex;
+}
+
+.buttonMenu{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+button{
+    border: none;
+    outline: skyblue;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(9, 186, 245);
+    border-radius: 1rem;
+    padding: 5px;
+    width: 85px;
+}
+
+
+/* Main Body Styling */
+.contentMain{
+    display: grid;
+    background-color: rgb(243, 229, 229);
+    grid-column: 2 / 4;
+    grid-template-columns: 4fr 1fr;
+}
+
+.carditemcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.carditemcontainer h2{
+    grid-column: 1 / 3;
+    align-self: center;
+    justify-self: start;
+    padding: 20px
+}
+
+.carditem{
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+    width: 500px;
+    height: 200px;
+    padding: 10px;
+    border-left: 5px solid gold;
+}
+
+
+/* Side Content Styling */
+.sideContent{
+    margin-top: 20px;
+    padding: 20px 0px 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.trending{
+    margin-top: 80px;
+}
+
+.announcementsBlocks{
+    box-shadow: 0 4px 2px -2px black;
+}
+
+.contentContainer{
+    background-color: white;
+    border-radius: 10px 0px 0px 10px;
+    height: 300px;
+    padding: 15px;
+    display: grid;
+}
+
+
+.sideContent h2{
+    margin-bottom: 20px;
+}
+
+.trendingBlocks{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+.trendingBlocks p{
+    grid-column: 1 / 3;
+}
+
+} 
