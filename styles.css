@@ -3,13 +3,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family:Arial, Helvetica, sans-serif ;
-    outline: 1px solid red;
+    font-family:Helvetica, Arial, sans-serif ;
+    /* outline: 1px solid red; */
 }
 
 
 img{
     width: 100px;
+    margin-right: 5px;
 }
 
 header{
@@ -25,7 +26,7 @@ header > div{
 }
 
 header img{
-    width: 50px
+    width: 60px;
 }
 
 .container{
@@ -37,14 +38,15 @@ header img{
 }
 
 input{
-    background-color: rgb(243, 229, 229);
+    background-color: #f5f5f4;
     border-radius: 1rem;
-    padding: 5px;
+    font-size: 20px;
     width: 700px;
+    padding: 5px
 }
 /* Sidebar Styling */
 .sidebarContainer{
-    background-color: rgb(46, 133, 190);
+    background-color: #06b6d4;
     color: white;
     grid-column: 1;
     grid-row: 1 / 5;
@@ -54,11 +56,11 @@ input{
     display: flex;
     flex-direction: column;
     padding-left: 20px;
-
+    font-size: 24px
 }
 
 .sidebar h1{
-    margin-top: 36px;
+    margin-top: 21px;
 }
 
 .firstBlock{
@@ -75,13 +77,24 @@ input{
 .firstBlock,
 .secondBlock{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .firstBlock li,
 .secondBlock li{
     list-style: none;
     margin-top: 20px;
+}
+
+.firstBlock li:hover,
+.secondBlock li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+i{
+    font-size: 24px;
+    width: 50px;
 }
  
 /* Main body Header Styling */
@@ -91,10 +104,12 @@ input{
     align-items: center;
     justify-content: space-between;
     padding: 0 50px;
+    border-bottom: 1px solid rgba(58, 53, 53, .5);
 }
 
 .contentHeader > div{
     display: flex;
+    
 }
 
 .buttonMenu{
@@ -108,24 +123,32 @@ button{
     outline: skyblue;
     font-size: 16px;
     color: white;
-    background-color: rgb(9, 186, 245);
+    background-color: #06b6d4;
     border-radius: 1rem;
     padding: 5px;
     width: 85px;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+button:hover{
+    background-color: #035361;
+    cursor: pointer;
 }
 
 
 /* Main Body Styling */
 .contentMain{
     display: grid;
-    background-color: rgb(243, 229, 229);
+    background-color: #f5f5f4;
     grid-column: 2 / 4;
     grid-template-columns: 4fr 1fr;
 }
 
+
 .carditemcontainer{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr 3fr;
     justify-items: center;
 }
 
@@ -133,23 +156,40 @@ button{
     grid-column: 1 / 3;
     align-self: center;
     justify-self: start;
-    padding: 20px
+    padding: 10px;
+    margin-left: 60px;
 }
 
 .carditem{
+    font-size: 20px;
     border-radius: 10px;
-    text-align: center;
     background-color: white;
     width: 500px;
     height: 200px;
     padding: 10px;
     border-left: 5px solid gold;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    box-shadow: 0 4px 2px -2px gray;
+
 }
 
+.carditem:hover{
+    transform: scale(1.1);
+}
+
+.icons{
+    justify-self: end;
+    align-self: end;
+}
+
+.icons:hover{
+    cursor: pointer;
+}
 
 /* Side Content Styling */
 .sideContent{
-    margin-top: 20px;
+    margin-top: 8px;
     padding: 20px 0px 20px 20px;
     display: flex;
     flex-direction: column;
@@ -157,10 +197,17 @@ button{
 
 .trending{
     margin-top: 80px;
+    box-shadow: 0 4px 2px -2px gray;
 }
 
-.announcementsBlocks{
-    box-shadow: 0 4px 2px -2px black;
+.announcements{
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.announcementBlocks{
+    box-shadow: 0 2px 2px -2px gray;
+    margin-top: 10px;
+
 }
 
 .contentContainer{
@@ -170,6 +217,8 @@ button{
     padding: 15px;
     display: grid;
 }
+
+
 
 
 .sideContent h2{
@@ -183,5 +232,3 @@ button{
 .trendingBlocks p{
     grid-column: 1 / 3;
 }
-
-} 
